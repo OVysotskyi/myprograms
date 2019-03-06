@@ -3,4 +3,6 @@ include 'MobileValidator'
 findProject(':MobileValidator')?.name = 'mp1'
 include 'WorkWithInheritance'
 findProject(':WorkWithInheritance')?.name = 'mp2'
+include 'BankManagement'
+findProject(':BankManagement')?.name = 'mp3'
 
