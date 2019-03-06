@@ -1,4 +1,6 @@
 rootProject.name = 'mp'
 include 'MobileValidator'
 findProject(':MobileValidator')?.name = 'mp1'
+include 'WorkWithInheritance'
+findProject(':WorkWithInheritance')?.name = 'mp2'
 
