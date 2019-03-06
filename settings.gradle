@@ -9,4 +9,6 @@ include 'WorkWithCollections'
 findProject(':WorkWithCollections')?.name = 'mp4'
 include 'TaskManager'
 findProject(':TaskManager')?.name = 'mp5'
+include 'TaskManager2'
+findProject(':TaskManager2')?.name = 'mp6'
 
