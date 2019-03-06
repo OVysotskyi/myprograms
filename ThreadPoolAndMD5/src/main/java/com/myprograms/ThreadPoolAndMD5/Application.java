@@ -6,6 +6,6 @@ public class Application {
         fileManager.deleteExistingFile();
 
         URLReader urlReader = new URLReader();
-        urlReader.processingUrlFromFile("E:\\geekhub\\hw12\\src\\main\\resources\\urls.txt");
+        urlReader.processingUrlFromFile("E:\\github\\ThreadPoolAndMD5\\src\\main\\resources\\urls.txt");
     }
 }
