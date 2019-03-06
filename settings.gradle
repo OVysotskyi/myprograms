@@ -5,4 +5,6 @@ include 'WorkWithInheritance'
 findProject(':WorkWithInheritance')?.name = 'mp2'
 include 'BankManagement'
 findProject(':BankManagement')?.name = 'mp3'
+include 'WorkWithCollections'
+findProject(':WorkWithCollections')?.name = 'mp4'
 
