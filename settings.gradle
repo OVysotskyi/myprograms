@@ -13,4 +13,6 @@ include 'TaskManager2'
 findProject(':TaskManager2')?.name = 'mp6'
 include 'ZipMaker'
 findProject(':ZipMaker')?.name = 'mp7'
+include 'WorkWithDB'
+findProject(':WorkWithDB')?.name = 'mp8'
 
