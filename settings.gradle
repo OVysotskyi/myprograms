@@ -15,4 +15,6 @@ include 'ZipMaker'
 findProject(':ZipMaker')?.name = 'mp7'
 include 'WorkWithDB'
 findProject(':WorkWithDB')?.name = 'mp8'
+include 'ThreadPoolAndMD5'
+findProject(':ThreadPoolAndMD5')?.name = 'mp9'
 

@@ -1,7 +1,7 @@
 package com.myprograms.TaskAboutStorage.storage;
 
-import com.geekhub.hw11.TaskAboutStorage.objects.Entity;
-import com.geekhub.hw11.TaskAboutStorage.objects.Ignore;
+import com.myprograms.TaskAboutStorage.objects.Entity;
+import com.myprograms.TaskAboutStorage.objects.Ignore;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
@@ -10,13 +10,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
-/**
- * Implementation of {@link Storage} that uses database as a storage for objects.
- * It uses simple object type names to define target table to save the object.
- * It uses reflection to access objects fields and retrieve data to map to database tables.
- * As an identifier it uses field id of {@link Entity} class.
- * Could be created only with {@link Connection} specified.
- */
 public class DatabaseStorage implements Storage {
 
     private Connection connection;
@@ -27,7 +20,6 @@ public class DatabaseStorage implements Storage {
 
     @Override
     public <T extends Entity> T get(Class<T> clazz, Integer id) throws StorageException {
-        //this method is fully implemented, no need to do anything, it's just an example
         String sql = "SELECT * FROM \"" + clazz.getSimpleName().toLowerCase() + "\" WHERE id = " + id;
 
         try (Statement statement = connection.createStatement()) {
