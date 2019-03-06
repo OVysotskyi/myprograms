@@ -1,0 +1,4 @@
+rootProject.name = 'mp'
+include 'MobileValidator'
+findProject(':MobileValidator')?.name = 'mp1'
+
