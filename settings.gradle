@@ -7,4 +7,6 @@ include 'BankManagement'
 findProject(':BankManagement')?.name = 'mp3'
 include 'WorkWithCollections'
 findProject(':WorkWithCollections')?.name = 'mp4'
+include 'TaskManager'
+findProject(':TaskManager')?.name = 'mp5'
 
